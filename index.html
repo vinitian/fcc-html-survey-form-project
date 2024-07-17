@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Favourite Milgram Character Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="top">
+            <h1 id="title">Favourite Milgram Character Survey</h1>
+            <p id="description">This survey is built for FreeCodeCamp Responsive Web Design course.</p>
+        </div>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="John Doe" required/></label>
+                <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="example@email.com" required/></label>
+                <label id="number-label" for="number">Age: <input id="number" type="number" min="18" max="130" placeholder="24" required/></label>
+            </fieldset>
+
+            <fieldset>
+                <p>Since what trial have you been a milgrammie?</p>
+                <label for="fan-since"><input value="trial-1" name="fan-since" type="radio" checked /> Trial 1</label>
+                <label for="fan-since"><input value="trial-2" name="fan-since" type="radio" /> Trial 2</label>
+                
+                <label for="dropdown">Please select your favourite character:</label>
+                <select id="dropdown" required>
+                    <option id="haruka">Sakurai Haruka</option>
+                    <option id="yuno">Kashiki Yuno</option>
+                    <option id="fuuta">Kajiyama Fuuta</option>
+                    <option id="muu">Kusunoki Muu</option>
+                    <option id="shidou">Kirisaki Shidou</option>
+                    <option id="mahiru">Shiina Mahiru</option>
+                    <option id="kazui">Mukuhara Kazui</option>
+                    <option id="amane">Momose Amane</option>
+                    <option id="mikoto">Kayano Mikoto</option>
+                    <option id="kotoko">Yuzuriha Kotoko</option>
+                    <option id="es">Es</option>
+                    <option id="jackalope">Jackalope (why)</option>
+                </select>
+
+                <p>Please select <bold>other</bold> characters that you also like:</p>
+                <label><input type="checkbox" value="001"/> Sakurai Haruka</label>
+                <label><input type="checkbox" value="002"/> Kashiki Yuno</label>
+                <label><input type="checkbox" value="003"/> Kajiyama Fuuta</label>
+                <label><input type="checkbox" value="004"/> Kusunoki Muu</label>
+                <label><input type="checkbox" value="005"/> Kirisaki Shidou</label>
+                <label><input type="checkbox" value="006"/> Shiina Mahiru</label>
+                <label><input type="checkbox" value="007"/> Mukuhara Kazui</label>
+                <label><input type="checkbox" value="008"/> Momose Amane</label>
+                <label><input type="checkbox" value="009"/> Kayano Mikoto</label>
+                <label><input type="checkbox" value="010"/> Yuzuriha Kotoko</label>
+                <label><input type="checkbox" value="00a"/> Es</label>
+                <label><input type="checkbox" value="00b"/> Jackalope</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Feelings towards trial 3? (optional)</label>
+                <textarea id="message" rows="3" cols="40" placeholder="i am scared for life"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+
+        <footer>
+            <p><a href="https://milgram.jp/"><em>お前の罪を歌え。</em></a></p>
+        </footer>
+    </body>
+</html>
